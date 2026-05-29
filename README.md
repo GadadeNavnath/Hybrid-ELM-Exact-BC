@@ -56,6 +56,11 @@ pip install numpy matplotlib shapely geopandas scipy
 - **Mixed**: a combination of Dirichlet and Neumann boundary conditions.
 
 ---
+### Methodology
+
+The solution of the differential equations is obtained using a two-step procedure based on the Legendre-IELM framework combined with Gauss–Newton iterations. In the first step, an initial approximation is constructed by forming an overdetermined linear system using collocation points and basis functions, and solving it in the least-squares sense to obtain the initial coefficient vector. In the second step, the nonlinear problem is solved iteratively using a Gauss–Newton method: at each iteration, the residual and its Jacobian with respect to the coefficients are evaluated, a linear least-squares problem is solved to compute the update, and the coefficient vector is refined until the residual norm satisfies a prescribed tolerance or the maximum number of iterations is reached. For Problem 4 (linear PDE), the solution is obtained directly from the initial least-squares formulation, and no Gauss–Newton iteration is required.
+
+---
 
 ### Data for Irregular Domains
 
