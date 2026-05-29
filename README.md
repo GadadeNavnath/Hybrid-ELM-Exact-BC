@@ -1,9 +1,9 @@
 ### A-hybrid-ELM-framework-with-exact-boundary-enforcement-for-irregular-domains
 This repository contains reproducibility materials for the manuscript:
 
-Title: “A Hybrid Extreme Learning Machine Framework with Exact Boundary Enforcement for Irregular Domains”
+**Title:** “A Hybrid Extreme Learning Machine Framework with Exact Boundary Enforcement for Irregular Domains”
 
-Authors: Gadade Navnath Ankush and Sivaram Ambikasaran
+**Authors:** Gadade Navnath Ankush and Sivaram Ambikasaran
 
 This repository provides Python implementations for solving boundary value problems with exact enforcement of boundary conditions. The code is organized into four benchmark problems, covering linear and nonlinear differential equations with reguale and irregualar domains, including a three-dimensional example.
 
