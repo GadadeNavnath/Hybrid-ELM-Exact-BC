@@ -29,9 +29,16 @@ pip install numpy matplotlib shapely geopandas scipy
 
 ## Problem Overview
 
-| Problem | BCs | Equation Class | Domain |
-|----------|----------|----------|----------|
-| Problem 1 | case 1) Dirichlet, case 2) Mixed | Linear | Regular |
-| Problem 2 | Dirichlet, Neumann, Mixed | Nonlinear | Irregular |
-| Problem 3 | Dirichlet, Neumann, Mixed | Nonlinear | Irregular |
-| Problem 4 | Dirichlet, Neumann, Mixed | Nonlinear | Irregular |
+| Problem   | Case   | BC Type   | Equation Class | Domain    |
+| --------- | ------ | --------- | -------------- | --------- |
+| Problem 1 | Case 1 | Dirichlet | Nonlinear      | Regular   |
+|           | Case 2 | Mixed     | Nonlinear      | Regular   |
+| Problem 2 | Case 1 | Dirichlet | Nonlinear      | Regular   |
+|           | Case 2 | Neumann   | Nonlinear      | Regular   |
+|           | Case 3 | Mixed     | Nonlinear      | Regular   |
+| Problem 3 | Case 1 | Dirichlet | Linear         | Irregular |
+|           | Case 2 | Neumann   | Linear         | Irregular |
+|           | Case 3 | Mixed     | Linear         | Irregular |
+| Problem 4 | Case 1 | Dirichlet | Nonlinear      | Irregular |
+|           | Case 2 | Neumann   | Nonlinear      | Irregular |
+|           | Case 3 | Mixed     | Nonlinear      | Irregular |
