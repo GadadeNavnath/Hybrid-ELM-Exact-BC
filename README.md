@@ -1,9 +1,10 @@
 ### A-hybrid-ELM-framework-with-exact-boundary-enforcement-for-irregular-domains
 This repository contains reproducibility materials for the manuscript:
-Title: “A Hybrid Extreme Learning Machine Framework with Exact
-Boundary Enforcement for Irregular Domains”
+
+Title: “A Hybrid Extreme Learning Machine Framework with Exact Boundary Enforcement for Irregular Domains”
 
 Authors: Gadade Navnath Ankush and Sivaram Ambikasaran
+
 This repository provides Python implementations for solving boundary value problems with exact enforcement of boundary conditions. The code is organized into four benchmark problems, covering linear and nonlinear differential equations with reguale and irregualar domains, including a three-dimensional example.
 
 ### Requirements
@@ -44,8 +45,11 @@ pip install numpy matplotlib shapely geopandas scipy
 |           | Case 3 | Mixed     | Nonlinear      | Irregular |
 
 **BC Type** denotes the type of boundary conditions imposed on the problem:
+
 - **Dirichlet**: all boundary conditions are of Dirichlet type.
+- 
 - **Neumann**: all boundary conditions are of Neumann type.
+- 
 - **Mixed**: a combination of Dirichlet and Neumann boundary conditions.
 
 ### Repository Structure
