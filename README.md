@@ -47,3 +47,35 @@ pip install numpy matplotlib shapely geopandas scipy
 - **Dirichlet**: all boundary conditions are of Dirichlet type.
 - **Neumann**: all boundary conditions are of Neumann type.
 - **Mixed**: a combination of Dirichlet and Neumann boundary conditions.
+
+### Repository Structure
+
+The repository is organized using a main folder named `problems`, which contains separate folders for each benchmark problem. Within each problem folder, subfolders corresponding to the boundary-condition configurations are provided.
+
+```text
+problems/
+├── problem1/
+│   ├── Dirichlet_BCs/
+│   └── Mixed_BCs/
+├── problem2/
+│   ├── Dirichlet_BCs/
+│   ├── Neumann_BCs/
+│   └── Mixed_BCs/
+├── problem3/
+│   ├── Dirichlet_BCs/
+│   ├── Neumann_BCs/
+│   └── Mixed_BCs/
+└── problem4/
+    ├── Dirichlet_BCs/
+    ├── Neumann_BCs/
+    └── Mixed_BCs/
+```
+
+Each boundary-condition folder includes:
+
+* Python scripts for implementation
+* A `data/` folder in which datasets are automatically generated and stored upon execution of the corresponding scripts
+* A dedicated README file describing the mathematical problem, required execution order, dataset generation, and instructions for running the code
+
+Figures used in the paper are provided separately in the `Figures/` folder.
+
