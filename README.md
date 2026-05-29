@@ -57,6 +57,18 @@ pip install numpy matplotlib shapely geopandas scipy
 
 ---
 
+### Data for Irregular Domains
+
+For Problem 3, the physical domain corresponds to **Sweden**.
+
+The repository includes the preprocessing scripts used to generate the geometry dataset and collocation points used in the computations. Generated datasets are stored in the `data/` folder.
+
+Preprocessed and rescaled geometry information is based on the original dataset obtained from the GADM database:
+
+https://geodata.ucdavis.edu/gadm/gadm4.1/json/gadm41_SWE_0.json
+
+---
+
 ### Repository Structure
 
 The repository is organized using a main folder named `problems`, which contains separate folders for each benchmark problem. Within each problem folder, subfolders corresponding to the boundary-condition configurations are provided.
