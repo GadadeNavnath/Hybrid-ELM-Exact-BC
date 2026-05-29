@@ -31,7 +31,7 @@ pip install numpy matplotlib shapely geopandas scipy
 
 | Problem | BCs | Equation Class | Domain |
 |----------|----------|----------|----------|
-| Problem 1 | Dirichlet, Mixed | Nonlinear | Regular |
-| Problem 2 | Dirichlet, Neumann, Mixed | Nonlinear | Regular |
-| Problem 3 | Dirichlet, Neumann, Mixed | Linear | Irregular |
+| Problem 1 | Dirichlet, Mixed | Linear | Regular |
+| Problem 2 | Dirichlet, Neumann, Mixed | Nonlinear | Irregular |
+| Problem 3 | Dirichlet, Neumann, Mixed | Nonlinear | Irregular |
 | Problem 4 | Dirichlet, Neumann, Mixed | Nonlinear | Irregular |
