@@ -50,9 +50,9 @@ pip install numpy matplotlib shapely geopandas scipy
 **BC Type** denotes the type of boundary conditions imposed on the problem:
 
 - **Dirichlet**: all boundary conditions are of Dirichlet type.
-- 
+  
 - **Neumann**: all boundary conditions are of Neumann type.
-- 
+  
 - **Mixed**: a combination of Dirichlet and Neumann boundary conditions.
 
 ---
