@@ -7,6 +7,7 @@ This repository contains reproducibility materials for the manuscript:
 
 This repository provides Python implementations for solving boundary value problems with exact enforcement of boundary conditions. The code is organized into four benchmark problems, covering linear and nonlinear differential equations with reguale and irregualar domains, including a three-dimensional example.
 
+---
 ### Requirements
 The code is implemented in Python and requires the following packages:
 
@@ -27,6 +28,8 @@ geopandas
 Install the required packages using:
 
 pip install numpy matplotlib shapely geopandas scipy
+
+---
 
 ### Problem Overview
 
@@ -51,6 +54,8 @@ pip install numpy matplotlib shapely geopandas scipy
 - **Neumann**: all boundary conditions are of Neumann type.
 - 
 - **Mixed**: a combination of Dirichlet and Neumann boundary conditions.
+
+---
 
 ### Repository Structure
 
@@ -82,6 +87,8 @@ Each boundary-condition folder includes:
 * A dedicated README file describing the mathematical problem, required execution order, dataset generation, and instructions for running the code
 
 Figures used in the paper are provided separately in the `Figures/` folder.
+
+---
 
 ### Reproducibility
 
