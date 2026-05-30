@@ -58,7 +58,16 @@ pip install numpy matplotlib shapely geopandas scipy
 ---
 ### Methodology
 
-The solution of the differential equations is obtained using a two-step procedure based on the Legendre-IELM framework combined with Gauss–Newton iterations. In the first step, an initial approximation is constructed by forming an overdetermined linear system using collocation points and basis functions, and solving it in the least-squares sense to obtain the initial coefficient vector. In the second step, the nonlinear problem is solved iteratively using a Gauss–Newton method: at each iteration, the residual and its Jacobian with respect to the coefficients are evaluated, a linear least-squares problem is solved to compute the update, and the coefficient vector is refined until the residual norm satisfies a prescribed tolerance or the maximum number of iterations is reached. For Problem 4 (linear PDE), the solution is obtained directly from the initial least-squares formulation, and no Gauss–Newton iteration is required.
+The solution of the partial differential equation involves two stages, which are described below. The proposed framework employs two Gauss–Newton procedures. The first is used in Stage 1 to obtain the IELM approximation, starting from the coefficients obtained from the corresponding linearized problem. The second is used in Stage 2 to enforce the boundary conditions exactly, taking the converged Stage 1 coefficients as the initial iterate.
+
+#### Stage 1: IELM Approximation
+
+An initial solution is obtained using the Legendre-IELM framework. By collocating the governing equation and boundary conditions, an overdetermined nonlinear system is formed. The resulting nonlinear least-squares problem is solved using a Gauss–Newton procedure, initialized with the coefficients obtained from the corresponding linearized problem. The converged coefficients provide the Stage 1 approximation.
+
+#### Stage 2: Exact Satisfaction of Boundary Conditions
+
+Starting from the Stage 1 solution, the coefficients are further refined to satisfy the boundary conditions exactly. This is formulated as a nonlinear least-squares problem involving the boundary residuals and solved using alternating Gauss–Newton iterations. At each iteration, the residuals and Jacobian are evaluated, a linear least-squares problem is solved for the coefficient update, and the process is repeated until convergence. Since Stage 1 provides a highly accurate initial approximation, Stage 2 typically converges in one or a few iterations.
+
 
 ---
 
