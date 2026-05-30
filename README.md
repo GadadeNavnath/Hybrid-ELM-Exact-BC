@@ -110,11 +110,10 @@ Each boundary-condition folder includes:
 
 * Python scripts for implementation
 * A `data/` folder in which datasets are automatically generated and stored upon execution of the corresponding scripts
-* A dedicated README file describing the mathematical problem, required execution order, dataset generation, and instructions for running the code
+
+In addition, each problem folder contains a dedicated README file describing the mathematical problem, available boundary-condition configurations, dataset generation, required execution order, and instructions for running the code.
 
 Figures used in the paper are provided separately in the `Figures/` folder.
-
----
 
 ### Reproducibility
 
