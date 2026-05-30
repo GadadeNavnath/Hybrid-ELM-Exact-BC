@@ -3,7 +3,7 @@
 We consider the three-dimensional nonlinear partial differential equation:
 
 $$
-u_{xx}+u_{yy}+u_{zz}-u^2 = (2+y^2)e^x-(z^2+2)\sin(y)-e^{2x}y^4-(z^2+2)^2\sin^2(y)-2e^xy^2(z^2+2)\sin(y),$$
+u_{xx}+u_{yy}+u_{zz}-u^2 = (2+y^2)e^x-(z^2+2)\sin(y)-\Big(e^x y^2+(z^2+2)\sin(y)\Big)^2,$$
 
 defined on the physical domain
 
