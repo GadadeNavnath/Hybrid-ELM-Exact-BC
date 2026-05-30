@@ -119,7 +119,7 @@ Figures used in the paper are provided separately in the `Figures/` folder.
 
 This repository provides all code and data required to reproduce the numerical results presented in the paper.
 
-Each problem folder contains the implementation scripts, dataset generation codes, and execution instructions associated with that problem. All parameter settings are defined directly within the scripts.
+Within each problem folder, the boundary-condition folders contain two scripts: main.py, which implements the numerical method, and domain.py, which generates the required datasets. All parameter settings are specified directly within these scripts.
 
 ---
 
