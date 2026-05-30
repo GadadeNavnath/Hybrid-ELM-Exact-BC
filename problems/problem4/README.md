@@ -13,7 +13,7 @@ $$
 0 \le \phi \le \frac{\pi}{2},
 $$
 
-where ((r,\theta,\phi)) denote spherical coordinates. For numerical implementation, the problem is reformulated in Cartesian coordinates ((x,y,z)).
+where $$(r,\theta,\phi)$$ denote spherical coordinates. For numerical implementation, the problem is reformulated in Cartesian coordinates ((x,y,z)).
 
 The exact solution is given by:
 
