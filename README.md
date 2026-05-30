@@ -5,7 +5,7 @@ This repository contains reproducibility materials for the manuscript:
 
 **Authors:** Gadade Navnath Ankush and Sivaram Ambikasaran
 
-This repository provides Python implementations for solving boundary value problems with exact enforcement of boundary conditions. The code is organized into four benchmark problems, covering linear and nonlinear differential equations with reguale and irregualar domains, including a three-dimensional example.
+This repository provides Python implementations for solving boundary value problems with exact enforcement of boundary conditions. The code is organized into four benchmark problems, covering linear and nonlinear partial differential equations with regular and irregualar domains, including a three-dimensional example.
 
 ---
 ### Requirements
