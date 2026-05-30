@@ -66,7 +66,7 @@ An initial solution is obtained using the Legendre-IELM framework. By collocatin
 
 #### Stage 2: Exact Satisfaction of Boundary Conditions
 
-Starting from the Stage 1 solution, the coefficients are further refined to satisfy the boundary conditions exactly. This is formulated as a nonlinear least-squares problem involving the boundary residuals and solved using alternating Gauss–Newton iterations. At each iteration, the residuals and Jacobian are evaluated, a linear least-squares problem is solved for the coefficient update, and the process is repeated until convergence. Since Stage 1 provides a highly accurate initial approximation, Stage 2 typically converges in one or a few iterations.
+Starting from the Stage 1 solution, the coefficients are further refined while enforcing the boundary conditions exactly. The boundary-enforcing coefficients are expressed as functions of the free coefficients, thereby reducing the problem to a nonlinear system involving only the free coefficients. A Gauss–Newton procedure is then applied to solve this reduced system. Since the boundary conditions are satisfied through the coefficient representation itself, they remain exactly satisfied throughout the iteration process. In practice, Stage 1 provides an excellent initial guess, and Stage 2 typically converges in one or a few Gauss–Newton iterations.
 
 
 ---
