@@ -14,9 +14,9 @@ The exact solution is given by:
 $$u(x,y)=\log(1+x^2+y^2).$$
 
 ---
-#### Boundary Conditions
+#### Boundary Conditions (BCs)
 
-All boundary conditions are derived from the exact solution.
+All BCs are derived from the exact solution.
 
 • Dirichlet BCs: Dirichlet conditions are prescribed on the entire boundary.
 
