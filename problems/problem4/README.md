@@ -31,7 +31,7 @@ All BCs are derived from the exact solution.
 
 • Neumann BCs: Neumann conditions are prescribed on the entire boundary.
 
-• Mixed BCs: Dirichlet conditions are imposed on the boundary portion where z ≥ 0.5, while Neumann conditions are imposed where z < 0.5.
+• Mixed BCs: Neumann BCs are prescribed on the inner and outer spherical surfaces (r = 0.5 and r = 1), while Dirichlet BCs are imposed on the coordinate planes x = 0, y = 0, and z = 0.
 
 ---
 
