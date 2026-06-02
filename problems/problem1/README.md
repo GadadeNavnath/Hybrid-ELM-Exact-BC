@@ -33,7 +33,7 @@ Each case folder contains the following files and subfolders:
 2. `data/`
    - Contains the training data, including interior points, boundary points.
 3. `domain.py`
-   - Generates the physical domain, interior points, boundary points, and other required data, which are then stored in the `data` folder.
+   - Generates the physical domain, interior points, boundary points, which are then stored in the `data` folder.
 
 4. `main.py`
    - Solves the corresponding problem, computes the approximate solution, evaluates the $$L_{\infty}$$ and RMS errors, and generates the associated plots.
