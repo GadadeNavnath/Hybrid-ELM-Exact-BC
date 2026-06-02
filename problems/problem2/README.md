@@ -24,6 +24,8 @@ All BCs are derived from the exact solution.
 
 • Mixed BCs: Dirichlet conditions are imposed on the boundary portion where y ≥ 0, while Neumann conditions are imposed where y < 0.
 
+---
+
 #### Folder Structure
 
 Each case folder contains the following files and subfolders:
@@ -39,6 +41,8 @@ Each case folder contains the following files and subfolders:
 
 4. `main.py`
    - Solves the corresponding problem, computes the approximate solution, evaluates the $$L_{\infty}$$ and RMS errors, and generates the associated plots.
+
+---
 
 Usage
 
