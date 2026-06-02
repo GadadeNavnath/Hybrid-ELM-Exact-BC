@@ -19,7 +19,7 @@ All BCs are derived from the exact solution.
 
 • Dirichlet BCs: Dirichlet conditions are prescribed on the entire boundary.
 
-• Mixed BCs: Dirichlet conditions are imposed on the left and bottom boundaries, while Neumann conditions are imposed on the right and top boundaries.
+• Mixed BCs: Neumann BCs are imposed on the left and right boundaries (x = 0, 10), while Dirichlet BCs are prescribed on the bottom and top boundaries (y = 0, 10).
 
 ---
 
