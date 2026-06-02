@@ -14,4 +14,11 @@ The exact solution is given by:
 $$u(x,y)=\log(1+x^2+y^2).$$
 
 ---
+All Bcs are derived from the exact solution.
+
+Dirichlet BCs: u is defined on $$\delta\omega$$
+
+Neumann BCs:
+
+Mixed BCs :
 
