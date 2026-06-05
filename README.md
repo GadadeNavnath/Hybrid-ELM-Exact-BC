@@ -56,9 +56,10 @@ pip install numpy matplotlib shapely geopandas scipy
 - **Mixed**: a combination of Dirichlet and Neumann boundary conditions.
 
 ---
-### Methodology
 
-The solution of the partial differential equation involves two stages, which are described below. The proposed framework employs two Gauss–Newton procedures. The first is used in Stage 1 to obtain the IELM approximation, starting from the coefficients obtained from the corresponding linearized problem. The second is used in Stage 2 to enforce the boundary conditions exactly, taking the converged Stage 1 coefficients as the initial iterate.
+#### Methodology
+
+For nonlinear PDEs, the solution procedure involves two stages, which are described below. The proposed framework employs two Gauss–Newton procedures. The first is used in Stage 1 to obtain the IELM approximation, starting from the coefficients obtained from the corresponding linearized problem. The second is used in Stage 2 to enforce the boundary conditions exactly, taking the converged Stage 1 coefficients as the initial iterate.
 
 #### Stage 1: IELM Approximation
 
