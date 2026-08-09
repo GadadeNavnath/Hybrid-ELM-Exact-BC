@@ -71,7 +71,7 @@ An initial solution is obtained using the Legendre-IELM framework. By collocatin
 
 Starting from the Stage 1 solution, the coefficients are further refined while enforcing the boundary conditions exactly. The boundary-enforcing coefficients are expressed as functions of the free coefficients, thereby reducing the problem to a nonlinear system involving only the free coefficients. A Gauss–Newton procedure is then applied to solve this reduced system. Since the boundary conditions are satisfied through the coefficient representation itself, they remain exactly satisfied throughout the iteration process. In practice, Stage 1 provides an excellent initial guess, and Stage 2 typically converges in one or a few Gauss–Newton iterations.
 
-
+For comparison, implementations of the Lagaris framework are also provided for selected benchmark cases. These baseline implementations use PyTorch and are included for the cases where a direct comparison is reported in the manuscript.
 ---
 
 ### Data for Irregular Domains
