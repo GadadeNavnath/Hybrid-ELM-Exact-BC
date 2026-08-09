@@ -21,13 +21,15 @@ scipy
 
 shapely
 
+PyTorch
+
 Problems 3 additionally require:
 
 geopandas
 
 Install the required packages using:
 
-pip install numpy matplotlib shapely geopandas scipy
+pip install numpy matplotlib shapely geopandas scipy torch
 
 ---
 
