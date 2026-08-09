@@ -5,7 +5,7 @@ This repository contains reproducibility materials for the manuscript:
 
 **Authors:** Gadade Navnath Ankush and Sivaram Ambikasaran
 
-This repository provides Python implementations for solving boundary value problems with exact enforcement of boundary conditions. The code is organized into four benchmark problems, covering linear and nonlinear partial differential equations with regular and irregualar domains, including a three-dimensional example.
+This repository provides Python implementations for solving boundary value problems with exact enforcement of boundary conditions. The code is organized into four benchmark problems, covering linear and nonlinear partial differential equations with regular and irregular domains, including a three-dimensional example.
 
 ---
 ### Requirements
@@ -13,19 +13,19 @@ The code is implemented in Python and requires the following packages:
 
 Python 3.12 or later
 
-numpy
+Numpy
 
-matplotlib
+Matplotlib
 
-scipy
+Scipy
 
-shapely
+Shapely
 
 PyTorch
 
 Problems 3 additionally require:
 
-geopandas
+Geopandas
 
 Install the required packages using:
 
@@ -71,7 +71,10 @@ An initial solution is obtained using the Legendre-IELM framework. By collocatin
 
 Starting from the Stage 1 solution, the coefficients are further refined while enforcing the boundary conditions exactly. The boundary-enforcing coefficients are expressed as functions of the free coefficients, thereby reducing the problem to a nonlinear system involving only the free coefficients. A Gauss–Newton procedure is then applied to solve this reduced system. Since the boundary conditions are satisfied through the coefficient representation itself, they remain exactly satisfied throughout the iteration process. In practice, Stage 1 provides an excellent initial guess, and Stage 2 typically converges in one or a few Gauss–Newton iterations.
 
-For comparison, implementations of the Lagaris framework are also provided for selected benchmark cases. These baseline implementations use PyTorch and are included for the cases where a direct comparison is reported in the manuscript.
+#### Lagaris Baseline
+
+For comparison, implementations of the Lagaris framework are provided for selected benchmark cases. These baseline implementations use PyTorch and correspond to the cases for which direct comparisons with the proposed framework are reported in the manuscript.
+
 ---
 
 ### Data for Irregular Domains
@@ -122,7 +125,8 @@ Figures used in the paper are provided separately in the `Figures/` folder.
 
 This repository provides all code and data required to reproduce the numerical results presented in the paper.
 
-Within each problem folder, the boundary-condition folders contain two scripts: main.py, which implements the numerical method, and domain.py, which generates the required datasets. All parameter settings are specified directly within these scripts.
+Within each problem folder, the boundary-condition folders contain the implementation of the proposed framework and the corresponding domain/data-generation scripts. For selected benchmark cases, the corresponding PyTorch implementation of the Lagaris framework used as a baseline comparison is also provided. All parameter settings are specified directly within the respective scripts.
+
 
 ---
 
